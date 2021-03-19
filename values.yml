@@ -1,0 +1,12 @@
+artifactory: artifactory
+pipelines:
+  name: template_go_build
+gitRepo:
+  name: github__tsuyo__jfrog_pipelines_template__system_go_build
+  provider: tsuyo_github
+  path: tsuyo/jfrog-pipelines-quickstart--go-build
+artifactoryRepo:
+  resolver:
+    name: go
+  targetBinary:
+    name: go-local
